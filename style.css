@@ -1,0 +1,561 @@
+/*
+Theme Name: Styl pro web Láďův mini aero web
+Description: osobní web
+Version: 1.0
+Author: Andrea Kubcová;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+
+/* Body Elements*/
+
+body
+{
+  font-family: 'Titillium Web', sans-serif;
+  width: 80%; 
+  margin-left: auto; 
+  margin-right: auto;
+  background: #BCC3CA;
+  background: -webkit-linear-gradient(right top, #BCC3CA 0%, #2B4B6F 100%) fixed;
+  background: -o-linear-gradient(bottom left, #BCC3CA 0%, #2B4B6F 100%) fixed;
+  background: -moz-linear-gradient(bottom left, #BCC3CA 0%, #2B4B6F 100%) fixed;
+  background: linear-gradient(to bottom left, #BCC3CA 0%, #2B4B6F 100%) fixed;
+  
+}
+
+#container
+{
+   padding: 10px;
+   border-top: 5px solid #2B4B6F;
+	 border-bottom: 5px solid #2B4B6F;
+    -webkit-border-radius: 15px 0px 15px 0px;
+    -moz-border-radius: 15px 0px 15px 0px;
+	 border-radius: 15px 0px 15px 0px;
+    -webkit-box-shadow: 3px 3px 5px 0px #BCC3CA;
+    -moz-box-shadow: 3px 3px 5px 0px #BCC3CA;
+	 box-shadow: 3px 3px 5px 0px #BCC3CA;
+   background-color: #FFF4EC;    
+   overflow: auto;
+}
+
+a:link, a:visited
+{
+  color: #70B278;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #CCDDCE;
+  text-decoration: underline;
+  
+}
+
+
+/* Header Elements*/
+
+header
+{ 
+  padding: 5px;
+  margin: 0px 5px 5px 5px;
+  background-color: #AA6839;
+  -webkit-border-radius: 15px 0px 0px 0px;
+  -moz-border-radius: 15px 0px 0px 0px;
+  border-radius: 15px 0px 0px 0px;
+}
+
+.title
+{
+
+  font: bold 2.5em 'Caveat Brush', cursive;
+  color: #082648;
+   -webkit-text-shadow: -1px 0px #082648, 0px 1px #082648, 1px 0px #082648, 0px -1px #082648;
+   -moz-text-shadow: -1px 0px #082648, 0px 1px #082648, 1px 0px #082648, 0px -1px #082648;
+  text-shadow: -1px 0px #CCDDCE, 0px 1px #CCDDCE, 1px 0px #CCDDCE, 0px -1px #CCDDCE;
+  
+  
+}
+
+.subtitle
+{
+
+  font: bold 1.2em 'Titillium Web', sans-serif;
+  color: #BCC3CA;
+  
+}
+
+.logo
+{
+  float: right;
+  width: 200px;
+  right: 200px;
+}
+
+/* Header Menu Elements*/
+
+nav#header-menu
+{
+  text-align: left; 
+}
+
+.hm-button
+{
+  display: inline-block;
+  width: 125px;
+  text-align: center;
+  background: #BCC3CA url("img/propeller-dark.png") no-repeat left center;
+  cursor: pointer;
+  border: 2px solid #FFF4EC;
+  padding: 2px;
+  
+}
+
+.hm-button a:link, a:visited
+{
+  color: #082648;
+  text-decoration: none;
+}
+
+.hm-button a:hover
+{
+  color: #BCC3CA;
+  
+}
+
+.hm-button:hover
+{
+  background: #082648 url("img/propeller-light.png") no-repeat left center;
+  
+}
+
+.hm-button:hover a:link
+{
+  color: #BCC3CA;
+  text-decoration: none;
+}
+
+
+.hm-button:hover a:visited, a:hover
+{
+  color: #BCC3CA;
+  
+}
+
+
+/* Right Sidebar Elements*/
+
+aside#right
+
+{
+  float: right;
+  display: inline-block;
+  width: 15%;
+  height: auto;
+  padding: 5px;
+  margin: 0px 5px 5px 0px;
+  border: 3px solid #2B4B6F;
+  background-color: #FFFFFF;
+  list-style: url("img/list-img-dblue.png");
+}
+
+aside#right .headline
+{
+  display: block;
+  background-color: #AA6839;
+  color: #BCC3CA;
+  font-weight: bold;
+  text-align: center;
+}
+
+aside .cite
+{
+   font: italic 1.0em 'Caveat Brush', cursive;
+   color: #082648;
+   text-align: center;
+   background: #CCDDCE;
+   border: 2px solid #FFF4EC;
+   display: none;
+   
+}
+
+
+/* Content Elements*/
+
+main
+{
+ float: left;
+ width: 80%;
+ display: inline-block;
+ background-color: #FFFFFF;
+ border: 3px solid #2B4B6F;
+ padding: 5px;
+ margin: 0px 5px 5px 5px;
+}
+
+main h1, h2, h3, h4
+
+{
+  font-weight: bold;
+  color: #002805;  
+}
+
+main h1, h2
+
+{
+    font-variant: small-caps;  
+}
+
+
+main h1
+
+{
+  font-size: 2.0em;
+  
+}  
+
+main h1::before
+
+{
+  content: url("img/heading-img-dark.png"); 
+}
+
+main h2
+
+{
+  font-size: 1.5em;
+}
+
+main h3, h4
+
+{
+  font-size: 1.0em;
+}
+
+
+
+main ul li
+{
+  list-style: url("img/list-img-dbrown.png") inside;
+  color: #6F3004;
+}
+
+main ol li
+{
+    list-style: decimal inside;
+    color: #6F3004;
+}
+
+
+article
+{
+  padding: 5px;
+  display: inline-block; 
+}
+
+section#selection
+{
+  border: 1px dotted #6F3004;
+  padding: 5px;
+  margin: auto;
+}
+
+article#selection1, article#selection2
+{
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  background-color: #CCDDCE;
+  border: 1px dotted #2C8437;
+  padding: 5px;
+  margin: auto;
+}
+
+article .read-more, article .remove
+{
+  display: inline-block;
+  float: right;
+  background: #FFF4EC url("img/list-img-dgreen.png") no-repeat left center;
+  cursor: pointer;
+  border: 1px solid #03560D;
+  padding: 2px 2px 2px 20px;
+  color: #03560D; 
+}
+
+article .read-more:hover, article .remove:hover
+{
+  color: #70B278;
+  background: #FFF4EC url("img/list-img-lgreen.png") no-repeat left center;
+  
+}
+
+article .more 
+
+{
+  display: none; 
+}
+
+article .img-wrapper
+{
+  float: left;
+  width: 20%;
+  display: inline-block;
+  padding: 15px 0px 0px 0px;
+  margin: 0px 10px 0px 0px;
+  
+}
+
+article .img-container
+{
+  height: 0;
+  padding-bottom: 75%;
+}
+  
+
+article .img, article#selection1 .selection-img, article#selection2 .selection-img
+{
+  width: 100%;
+  height: auto;
+  border: 1px dotted #6F3004;   
+}
+
+#gallery-wrapper
+{
+    margin: 5px;
+    display: inline-block;
+}
+
+p::first-letter
+{
+  font-size: 1.3em;
+  color: #03560D; 
+}
+
+#video-wrapper 
+{
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+
+#video-wrapper iframe {
+	position: absolute;
+	width: 90%;
+	height: 90%;
+}
+
+/* Table Elements*/
+
+table
+{
+  border-collapse: collapse;
+  color: #03560D;
+  margin: 5px
+}
+
+#table-wrapper
+{
+    overflow-x:auto;
+}
+
+caption
+{ 
+  color: #CCDDCE;
+}
+
+th 
+{
+  background-color: #CCDDCE;
+  text-align: left;
+  font-weight: bold;
+}
+
+td 
+{
+  background-color: #FFF4EC;
+}
+
+table, th, td
+{
+  border-bottom: 1px solid #CCDDCE;
+}
+
+tr:hover td
+{
+  background-color: #CCDDCE;
+}
+
+/* Form Elements*/
+
+form#message
+{
+  width: 80%;
+  background-color: #CCDDCE;
+  padding: 5px;
+  margin: auto;
+}
+
+form#message fieldset
+{
+  color: #6F3004;
+  border: 1px solid #6F3004;
+}
+
+form#message legend
+{
+  font-weight: bold;
+}
+
+form#message label 
+{
+  width:  200px;
+  float:  left;
+  display: inline;
+  
+}
+
+form#message .button 
+{
+  border: 2px outset white;
+  background-color: #70B278;
+  color: #6F3004;
+  
+}
+
+/* Footer Elements*/
+
+footer
+{
+  padding: 5px;
+  margin: 0px 5px 5px 5px;
+  background-color: #CCDDCE;
+  -webkit-border-radius: 0px 0px 15px 0px;
+  -moz-border-radius: 0px 0px 15px 0px;
+  border-radius: 0px 0px 15px 0px;
+  border: #03560D 1px solid;
+  display: block;
+  clear: both;
+
+}
+
+footer a:link 
+{
+  text-decoration: none;
+  text-align: center;
+  background: url("img/list-img-dgreen.png") no-repeat left center;
+  cursor: pointer;
+  padding-left: 20px;
+  color: #03560D;                       
+  
+}
+
+
+footer a:visited
+{
+  color: #002805;
+  
+}
+
+footer a:hover
+{
+  color: #70B278;
+  text-decoration: underline;;
+
+}
+
+.copyright, .author
+{
+   
+   text-align: center;
+   display: block;
+}
+
+.author
+
+{
+  background: #E5B491;
+}
+
+/* Footer Menu Elements*/
+
+nav#footer-menu
+{
+ text-align: center;
+ padding: 5px;
+}
+
+/* Slider Elements*/
+
+
+/* Responsive Elements*/
+
+@media only screen and (max-width: 1200px) {
+
+body  {width: 90%;}
+header {width: 98%;}
+main {width: 75%; float: left;}
+aside#right {width: 17%; float: right;}
+section#selection {width: 98%;} 
+article#selection1, article#selection2 {width: 47%;}
+footer {width: 98%;}
+
+}
+
+@media only screen and (max-width: 768px) {
+body  {width: 100%;}
+header {width: 98%;}
+main {width: 98%; float: none;}
+aside#right {width: 98%; float: none;}
+section#selection {width: 96%;} 
+article#selection1, article#selection2 {width: 95%;}
+footer {width: 98%;}
+
+}
+
+@media only screen and (max-width: 480px) {
+body  {width: 100%;}
+header {width: 98%;}
+main {width: 97%; float: none;}
+section#selection {width: 96%;} 
+article#selection1, article#selection2 {width: 95%;}
+aside#right {width: 97%; float: none;}
+footer {width: 97%;}
+
+}
+
+
+/* Print Elements*/
+
+@media print {
+
+body  {width: 100%; color: black}
+
+#container {
+ border-top: 0px;
+ border-bottom: 0px;
+ border-radius: 0px 0px 0px 0px;
+ box-shadow: 0px 0px 0px 0px;
+ background-color: #FFFFFF;}
+
+main {
+ width: 98%;
+ background-color: #FFFFFF;
+ border: 0px; color: black;}
+ 
+#video-wrapper {display: none;}
+ 
+section#selection {border: 0px;} 
+article#selection1, article#selection2 {border: 0px;}
+
+main h1::before {content: "";}
+
+header {display: none;}
+aside#right {display: none;}
+footer {display: none;}
+
+}
+
+
+
+
+

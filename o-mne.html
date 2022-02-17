@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <title>Láďův mini aero web - O MNĚ</title>
+    
+    <meta charset="utf-8">
+    <meta name="description" content="Modely letadel z 2. světové války">
+    <meta name="keywords" content="modelářství, letadla, 2. světová válka, osobní web">
+    <meta name="author" content="Andrea Kubcová, amorph212@gmail.com">
+    <meta name="robots" content="all">
+    <meta name="generator" content="PSPad" />
+    
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <!-- Style --> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-lightbox.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    
+    <!-- jQuery Library --> 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <!-- My Scripts --> 
+    <script src="js/fade-cite.js"></script>
+    <script src="js/lightbox.js"></script>
+    
+  </head>
+  <body>
+   
+   <div id="container">
+    
+    <header>
+      <img src="img/logo-plane02.png" alt="logo-plane02.png, 128kB" title="logo-plane02" class="logo">
+      <div class="title">
+      LÁĎŮV MINI AERO WEB
+      </div>
+      <div class="subtitle">
+       plastové modely letadel z 2. světové války
+      </div>
+      
+     <nav id="header-menu">
+      <span class="hm-button"><a href="index.html" title="Domů">DOMŮ</a></span>
+      <span class="hm-button"><a href="novinky.html" title="Novinky">NOVINKY</a></span>
+      <span class="hm-button"><a href="modely.html" title="Modely">MODELY</a></span>
+      <span class="hm-button"><a href="stavebnice.html" title="Stavebnice">STAVEBNICE</a></span>
+      <span class="hm-button"><a href="o-mne.html" title="O mně">O MNĚ</a></span>
+      <span class="hm-button"><a href="kontakt.html">KONTAKT</a></span>
+      </nav>
+  
+    </header>   
+   
+    <main>
+    <h1>O mně</h1> 
+      <p>
+        Jmenuji se Ladislav Kubec a jsem nadšený modelář amatér. Zajímám se hlavně o plastové modely letadel z 2. světové války. Rád si čtu o historii, technickém provedení a vojenském nasazení těchto letadel.
+      </p>
+      <article>
+      <h3>Dětství</h3>
+      Už od dětství jsem často slepoval papírové modely všeho druhu od Formule 1, auta, tanky, domky, hrady i letadadla z časopisu ABC ( 1979-1985 ). 
+      Tu a tam se objevilo plastové letadélko (Albatros, Delfín, MiGy, JAK...), samozřejmě nenatřené, maximálně fixou počmárané a později jsem nevalně vyzkoušel nátěr stříbrnou modelářskou barvou. HLAVNÍ BYLA MOJE RADOST Z LEPENÍ!
+      </article> 
+      <article> 
+      <h3>Druhé plastové období</h3>
+      Zhruba od roku 2003 začalo moje druhé plastové období, kdy jsem v místě nového zaměstnání v Náchodě objevil modelářskou prodejnu ( a později internetové obchody i rady k modelářské tvorbě) 
+      a nakupoval letadla z 2. světové války v měřítku 1:72. A natíral štětcem, samozřejmě pouze pro své oči, výstavní kousky to nejsou. 
+      Zkoušel jsem poprvé různé pomocné techniky a zjistil, že barvy z AGAMY nejsou úplně to právě, ale pro základní práci stačí. HUMBROLKY měly lepší trvanlivost, objevil jsem laky, znečištění povrchu, a mnoho dalšího...
+      </article>
+    <div id="gallery-wrapper">
+    <div class="row">
+    <div class="column">
+      <img src="img/model-tb-republic-p47.jpg" style="width:100%" alt="REPUBLIC P-47 THUNDERBOLT" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/model-he-219-uhu-01.jpg" style="width:100%" alt="HEINKEL HE-219 UHU" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="img/model-mi-zero-52c.jpg" style="width:100%" alt="MITSUBISHI A6M5c ZERO TYP 52" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/model-tb-republic-p47.jpg" style="width:100%" alt="REPUBLIC P-47 THUNDERBOLT">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/model-he-219-uhu-01.jpg" style="width:100%" alt="HEINKEL HE-219 UHU">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/model-mi-zero-52c.jpg" style="width:100%" alt="MITSUBISHI A6M5c ZERO TYP 52">
+    </div>  
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="img/model-tb-republic-p47.jpg" style="width:100%" onclick="currentSlide(1)" alt="REPUBLIC P-47 THUNDERBOLT">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/model-he-219-uhu-01.jpg" style="width:100%" onclick="currentSlide(2)" alt="HEINKEL HE-219 UHU">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/model-mi-zero-52c.jpg" style="width:100%" onclick="currentSlide(3)" alt="MITSUBISHI A6M5c ZERO TYP 52">
+    </div>
+    </div>
+    </div>
+    
+  </div>
+
+ <article> 
+      <h3>Modely z 2. světové války</h3>
+      Postupně jsem slepil německou bitevní loď Bismarck, stíhačky Mitsubishi Zero, P-47 Thunderbolt, Vought F4U Corsair, bombardér Vickers Wellington, Messerschmitt 109 a 110, Junkers Ju 88 a Ju 87 Stuka, 
+      Heinkel He 111 a He 219 Uhu, Focke- Wullf 190 a Fw 189 , bombárder Boeing B-17 Fortress a Dornier Do 217. K rozdělaným kouskům se později vrátím.
+      </article>
+
+      <article> 
+      <h3>Současnost</h3>
+      Teď už delší dobu tápu před pokusy se stříkací pistolí, použití sprejů jako základové barvy, prostě člověk se pořád učí.
+      </article>  
+    </main>
+    
+     <aside id="right">
+      <div class="headline">Moje novinky</div>
+      <ul>
+      <li><a href="novinky.html#me410" title="Messerschmitt ME-410">ME-410</a></li>
+      <li><a href="novinky.html#tu2" title="Tupolev TU-2">TU-2</a></li>
+      <li><a href="novinky.html#do17" title="Dornier Do-17">DO-17</a></li>
+      </ul>
+      <div class="headline">Modelářské weby</div>
+      <ul>
+      <li><a href="https://www.modelforum.cz/" title="Diskuzní fórum modelářů">Modelforum</a></li>
+      <li><a href="https://modelweb.modelforum.cz" title="ModelWEB">Modelweb</a></li>
+      <li><a href="http://lietadielka.blogspot.cz/" title="Lietadielka - modelársky blog">Lietadielka</a></li>
+      <li><a href="https://www.eduard.com/cs/" title="Výrobce Eduard">Eduard</a></li>
+      <li><a href="https://www.peckamodel.cz/" title="Výrobce Pecka model">Pecka model</a></li>
+      </ul>
+      
+      <div class="cite">
+      &bdquo;Když se zdá, že jde všechno proti tobě, pamatuj, že letadlo vzlétne vždy proti větru a ne s větrem.&ldquo;
+      HENRY FORD
+      </div>
+  
+    </aside>  
+    
+    <footer>
+      
+      <span class="author">Webdesign <a href="mailto:amorph212@gmail.com" title="Email Andrea Kubcová">Andrea Kubcová</a>, 2018. Vypracováno jako zápočtová práce předmětu KTPW1 v akademickém roce 2017/18.</span>
+      
+      <nav id="footer-menu">
+      <a href="http://www.pspad.com/" title="PSPad - Freeware text editor">PSPad</a>
+      <a href="http://paletton.com" title="Paletton - The Color Scheme Designer">Palleton</a>, 
+      <a href="https://validator.w3.org/" title="Markup Validation Service">Markup Validation Service</a>, 
+      <a href="https://jigsaw.w3.org/css-validator/" title="CSS Validation Service">CSS Validation Service</a>
+      </nav>
+      
+      <span class="copyright">Copyright  &copy; <a href="mailto:sinuhet2005@gmail.com" title="Email Ladislav Kubec">Ladislav Kubec</a>, 2018</span>
+    </footer> 
+  
+   </div>
+  </body>
+</html>
